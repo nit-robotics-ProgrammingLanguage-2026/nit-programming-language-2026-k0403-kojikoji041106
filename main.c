@@ -1,7 +1,16 @@
 #include <stdio.h>
 
 int main(void) {
-    /* 課題0403: 入力されたintのデータを1.08倍した結果を整数(int)として表示するプログラムを書け．intへの変換には「キャスト演算(前回スライドを参照のこと)」を使用せよ */
-    
+    int input;
+    double result_double;
+    int result_int;
+
+    scanf("%d", &input);
+
+    result_double = (double)input * 1.08;
+    result_int = (int)result_double;
+
+    printf("%d\n", result_int);
+
     return 0;
 }
